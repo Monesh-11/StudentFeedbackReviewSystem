@@ -1,0 +1,122 @@
+.roadmap-page {
+    max-width: 1400px;
+}
+
+.page-header {
+    margin-bottom: var(--spacing-xl);
+}
+
+.page-header h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.page-header p {
+    color: var(--text-secondary);
+}
+
+.roadmap-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.roadmap-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-md);
+}
+
+.roadmap-header h3 {
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+.progress-percentage {
+    font-size: 1.5rem;
+    font-weight: 700;
+    background: var(--student-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.topics-list {
+    margin: var(--spacing-md) 0;
+}
+
+.topic-item {
+    display: flex;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-sm);
+    border-radius: var(--radius-sm);
+    margin-bottom: 0.5rem;
+    transition: all var(--transition-fast);
+}
+
+.topic-item:hover {
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.topic-status {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.topic-item.completed .topic-status {
+    background: var(--accent-green);
+    color: white;
+}
+
+.topic-item.pending .topic-status {
+    border: 2px solid var(--text-muted);
+    color: var(--text-muted);
+}
+
+.topic-content {
+    flex: 1;
+}
+
+.topic-name {
+    font-weight: 500;
+    color: var(--text-primary);
+    margin-bottom: 0.25rem;
+}
+
+.topic-resources {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    margin-top: 0.5rem;
+}
+
+.resource-link {
+    font-size: 0.85rem;
+    color: var(--accent-blue);
+    text-decoration: none;
+    transition: color var(--transition-fast);
+}
+
+.resource-link:hover {
+    color: var(--accent-purple);
+    text-decoration: underline;
+}
+
+.roadmap-footer {
+    margin-top: var(--spacing-md);
+    padding-top: var(--spacing-md);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 768px) {
+    .roadmap-grid {
+        grid-template-columns: 1fr;
+    }
+}

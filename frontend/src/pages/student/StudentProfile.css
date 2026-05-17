@@ -1,0 +1,104 @@
+.student-profile {
+    max-width: 1200px;
+}
+
+.profile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-xl);
+}
+
+.profile-header h1 {
+    font-size: 2rem;
+}
+
+.profile-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.form-group {
+    margin-bottom: var(--spacing-md);
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.form-group input:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.resume-upload {
+    margin-top: var(--spacing-md);
+}
+
+.upload-area {
+    border: 2px dashed rgba(255, 255, 255, 0.2);
+    border-radius: var(--radius-md);
+    padding: var(--spacing-xl);
+    text-align: center;
+    transition: all var(--transition-normal);
+}
+
+.upload-area:hover {
+    border-color: var(--accent-blue);
+    background: rgba(79, 172, 254, 0.05);
+}
+
+.upload-icon {
+    font-size: 3rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.upload-area p {
+    margin-bottom: var(--spacing-md);
+    color: var(--text-secondary);
+}
+
+.uploaded-file {
+    margin-top: var(--spacing-md);
+    padding: var(--spacing-sm);
+    background: rgba(0, 242, 169, 0.1);
+    border: 1px solid var(--accent-green);
+    border-radius: var(--radius-sm);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.uploaded-file span {
+    color: var(--accent-green);
+    font-weight: 500;
+}
+
+.skills-list {
+    margin-top: var(--spacing-md);
+}
+
+.skill-item {
+    margin-bottom: var(--spacing-md);
+}
+
+.links-section {
+    margin-top: var(--spacing-md);
+}
+
+@media (max-width: 768px) {
+    .profile-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .profile-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--spacing-sm);
+    }
+}

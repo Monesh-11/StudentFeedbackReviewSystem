@@ -1,0 +1,81 @@
+.badge {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-sm);
+    background: var(--bg-card);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--radius-md);
+    transition: all var(--transition-normal);
+    position: relative;
+}
+
+.badge-earned {
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.badge-earned:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.badge-locked {
+    opacity: 0.5;
+}
+
+.badge-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.badge-medium .badge-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+}
+
+.badge-small .badge-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+}
+
+.badge-large .badge-icon {
+    width: 70px;
+    height: 70px;
+    font-size: 2rem;
+}
+
+.badge-info h4 {
+    margin: 0;
+    font-size: 1rem;
+    color: var(--text-primary);
+}
+
+.badge-info p {
+    margin: 0;
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+}
+
+.badge-checkmark {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 24px;
+    height: 24px;
+    background: var(--accent-green);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 0.875rem;
+}

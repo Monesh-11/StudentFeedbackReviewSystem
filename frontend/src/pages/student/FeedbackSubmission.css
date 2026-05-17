@@ -1,0 +1,88 @@
+.feedback-submission {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.feedback-container {
+    margin-top: var(--spacing-lg);
+}
+
+.feedback-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.rating-selector {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.star {
+    background: none;
+    border: none;
+    font-size: 2.5rem;
+    color: var(--text-muted);
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    padding: 0;
+}
+
+.star:hover,
+.star.active {
+    color: var(--accent-orange);
+    transform: scale(1.1);
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    cursor: pointer;
+    color: var(--text-primary);
+}
+
+.checkbox-label input[type="checkbox"] {
+    width: auto;
+    cursor: pointer;
+}
+
+.help-text {
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    margin-left: 1.75rem;
+}
+
+.success-message {
+    text-align: center;
+    padding: var(--spacing-xl);
+}
+
+.success-icon {
+    width: 80px;
+    height: 80px;
+    background: var(--accent-green);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: white;
+    margin: 0 auto var(--spacing-md);
+    animation: scaleIn 0.5s ease;
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+.success-message h2 {
+    color: var(--accent-green);
+    margin-bottom: var(--spacing-sm);
+}
